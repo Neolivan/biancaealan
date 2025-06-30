@@ -3,12 +3,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+    const navMenu = document.querySelector('nav ul.nav-menu');
     
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
+    console.log('Menu toggle element:', menuToggle);
+    console.log('Nav menu element:', navMenu);
+    
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Menu toggle clicked!');
             navMenu.classList.toggle('active');
+            console.log('Menu active class:', navMenu.classList.contains('active'));
         });
+    } else {
+        console.error('Menu elements not found:', { menuToggle, navMenu });
     }
     
     // Countdown Timer
