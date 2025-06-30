@@ -1,0 +1,425 @@
+/* Presentes Styles */
+
+.presentes {
+    padding-top: 120px; /* Extra padding to account for fixed header */
+}
+
+/* Gift Options */
+.gift-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.gift-option-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.gift-option-card:hover {
+    transform: translateY(-5px);
+}
+
+.gift-option-card.active {
+    border-color: var(--primary-color);
+    background-color: rgba(160, 82, 45, 0.05);
+}
+
+.gift-option-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.gift-option-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Gift Content Container */
+.gift-content-container {
+    margin: 40px 0;
+}
+
+.gift-content {
+    display: none;
+}
+
+.gift-content.active {
+    display: block;
+}
+
+/* PIX Content */
+.pix-container {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pix-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.pix-info > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pix-details {
+    background-color: var(--section-bg-color);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.pix-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.pix-detail:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 100px;
+}
+
+.detail-value {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.copy-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #e6c89c;
+}
+
+.pix-qrcode {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pix-qrcode img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.pix-value-options {
+    text-align: center;
+}
+
+.pix-value-options h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.value-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.value-btn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.value-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+/* Special styling for PIX copy button */
+.value-btn[data-value="c10631cd-8abd-4173-9e5b-f03be0b9e561"] {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-weight: 700;
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+}
+
+.value-btn[data-value="c10631cd-8abd-4173-9e5b-f03be0b9e561"]:hover {
+    background-color: var(--light-text-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Virtual Gifts */
+.virtual-gifts h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.virtual-gifts div > a > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.gift-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+}
+
+.gift-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gift-card h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin: 15px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.gift-card p {
+    margin: 0 20px 15px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.gift-price {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0 20px 15px;
+}
+
+.gift-card .btn-primary {
+    margin: 0 20px 20px;
+    width: calc(100% - 40px);
+}
+
+/* Experience Gifts */
+.experience-gifts h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.experience-gifts > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience-progress {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.experience-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.experience-card h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin: 15px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.experience-card p {
+    margin: 0 20px 15px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.experience-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px 20px;
+}
+
+.exp-btn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+}
+
+.exp-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+/* Gift Message */
+.gift-message {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: 60px auto 0;
+}
+
+.gift-message h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.gift-message-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gift-option-card {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .pix-container {
+        padding: 30px 20px;
+    }
+    
+    .pix-detail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detail-label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .copy-btn {
+        margin: 10px 0 0 0;
+    }
+    
+    .gift-grid,
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gift-card,
+    .experience-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .gift-message {
+        padding: 30px 20px;
+    }
+}
+

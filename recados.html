@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recados - Bianca & Alan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recados.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bianca & Alan</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="evento.html">Cerimônia & Festa</a></li>
+                <li><a href="presentes.html">Lista de Presentes</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="rsvp.html">Confirme sua Presença</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section recados">
+            <h2>Recados para os Noivos</h2>
+            <p>Deixe uma mensagem especial para Bianca e Alan!</p>
+            
+            <div class="recados-container">
+                <div class="recados-form-container">
+                    <h3>Envie seu Recado</h3>
+                    <form class="recados-form">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Seu Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="relacao">Relação com os Noivos:</label>
+                            <select id="relacao" name="relacao">
+                                <option value="familia-noiva">Família da Noiva</option>
+                                <option value="familia-noivo">Família do Noivo</option>
+                                <option value="amigo-noiva">Amigo(a) da Noiva</option>
+                                <option value="amigo-noivo">Amigo(a) do Noivo</option>
+                                <option value="colega-trabalho">Colega de Trabalho</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recado">Seu Recado:</label>
+                            <textarea id="recado" name="recado" rows="6" required></textarea>
+                            <small>Máximo de 500 caracteres</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="publico" checked>
+                                <span>Tornar este recado público para outros convidados</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Enviar Recado</button>
+                    </form>
+                </div>
+                
+                <div class="recados-board">
+                    <h3>Mensagens de Carinho</h3>
+                    
+                    <div class="recados-filter">
+                        <label for="filtro-recados">Filtrar por:</label>
+                        <select id="filtro-recados">
+                            <option value="todos">Todos os Recados</option>
+                            <option value="familia-noiva">Família da Noiva</option>
+                            <option value="familia-noivo">Família do Noivo</option>
+                            <option value="amigos">Amigos</option>
+                            <option value="recentes">Mais Recentes</option>
+                        </select>
+                    </div>
+                    
+                    <div class="recados-list">
+                        <!-- Recados serão adicionados aqui dinamicamente -->
+                        <div class="recado-card" data-type="familia-noiva">
+                            <div class="recado-header">
+                                <h4>Maria Silva</h4>
+                                <span class="recado-relation">Família da Noiva</span>
+                                <span class="recado-date">05/06/2025</span>
+                            </div>
+                            <div class="recado-content">
+                                <p>Bianca e Alan, que a felicidade de vocês seja eterna como o amor que os une! Estou muito feliz em poder compartilhar esse momento tão especial. Que Deus abençoe essa união!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recado-card" data-type="familia-noivo">
+                            <div class="recado-header">
+                                <h4>João Santos</h4>
+                                <span class="recado-relation">Família do Noivo</span>
+                                <span class="recado-date">02/06/2025</span>
+                            </div>
+                            <div class="recado-content">
+                                <p>Que alegria ver vocês dando este passo tão importante! Desejo muitos anos de amor, compreensão e parceria. Alan, cuide bem da Bianca! Estamos todos muito felizes por vocês!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recado-card" data-type="amigo-noiva">
+                            <div class="recado-header">
+                                <h4>Carolina Mendes</h4>
+                                <span class="recado-relation">Amiga da Noiva</span>
+                                <span class="recado-date">01/06/2025</span>
+                            </div>
+                            <div class="recado-content">
+                                <p>Bi, desde a faculdade eu sabia que você encontraria alguém especial como o Alan. Vocês formam um casal lindo e inspirador! Mal posso esperar para celebrar com vocês nesse dia tão especial!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recado-card" data-type="amigo-noivo">
+                            <div class="recado-header">
+                                <h4>Pedro Oliveira</h4>
+                                <span class="recado-relation">Amigo do Noivo</span>
+                                <span class="recado-date">30/05/2025</span>
+                            </div>
+                            <div class="recado-content">
+                                <p>Alan, meu amigo! Finalmente você encontrou sua alma gêmea! Bianca é incrível e vocês merecem toda a felicidade do mundo. Conte comigo para o que precisar, inclusive para a despedida de solteiro! 😉</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recados-pagination">
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn next">Próximo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bianca & Alan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="recados.js"></script>
+</body>
+</html>
+

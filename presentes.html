@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Bianca & Alan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="presentes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bianca & Alan</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="evento.html">Cerimônia & Festa</a></li>
+                <li><a href="presentes.html">Lista de Presentes</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="rsvp.html">Confirme sua Presença</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section presentes">
+            <h2>Lista de Presentes</h2>
+            
+            <div class="gift-options">
+                <div class="gift-option-card active" data-option="pix">
+                    <div class="gift-option-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>PIX</h3>
+                    <p>Contribua diretamente via PIX</p>
+                </div>
+                
+                <div class="gift-option-card" data-option="virtual">
+                    <div class="gift-option-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Presentes Virtuais</h3>
+                    <p>Escolha um presente virtual</p>
+                </div>
+                
+                <!-- <div class="gift-option-card" data-option="experience">
+                    <div class="gift-option-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Experiências</h3>
+                    <p>Contribua para nossa lua de mel</p>
+                </div> -->
+            </div>
+            
+            <div class="gift-content-container">
+                <!-- PIX Option -->
+                <div class="gift-content active" id="pix-content">
+                    <div class="pix-container">
+                        <div class="pix-info">
+                            <h3>Contribua via PIX</h3>
+                            <p>Sua contribuição nos ajudará a construir nosso futuro juntos.</p>
+                            
+                            <div class="pix-qrcode">
+                                <img src="images/qrcode_pix_corrigido.png" alt="QR Code PIX">
+                                <p>Escaneie o QR Code para contribuir</p>
+                            </div>
+                            <div class="value-btn" data-value="c10631cd-8abd-4173-9e5b-f03be0b9e561">Pix copia e cola</div>
+                            <div class="pix-value-options">
+                                <h4>Sugestões de Valores:</h4>
+                                <div class="value-buttons">
+                                    <div class="value-btn" data-value="100">R$ 100</div>
+                                    <div class="value-btn" data-value="200">R$ 200</div>
+                                    <div class="value-btn" data-value="300">R$ 300</div>
+                                    <div class="value-btn" data-value="500">R$ 500</div>
+                                    <div class="value-btn custom-value">Outro Valor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Virtual Gifts Option -->
+                <div class="gift-content" id="virtual-content">
+                    <div class="virtual-gifts">
+                        <h3>Presentes Virtuais</h3>
+                        <div class="pix-container">
+
+                            <a href="https://www.querodecasamento.com.br/lista-de-casamento/bianca-e-alan" target="_blank">
+                                <p>Click aqui para acessar a lista de presentes virtuais</p>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Experience Gifts Option -->
+                <div class="gift-content" id="experience-content">
+                    <div class="experience-gifts">
+                        <h3>Contribua para Nossa Lua de Mel via PIX</h3>
+                        <p>Sua contribuição para nossa lua de mel pode ser feita diretamente via PIX, utilizando a mesma chave:</p>
+                        
+                        <div class="pix-details">
+                            <div class="pix-detail">
+                                <span class="detail-label">Chave PIX:</span>
+                                <span class="detail-value">(41) 99857-0511</span>
+                                <button class="copy-btn" data-copy="(41) 99857-0511">Copiar</button>
+                            </div>
+                            
+                            <div class="pix-detail">
+                                <span class="detail-label">Nome:</span>
+                                <span class="detail-value">Bianca Moreira</span>
+                            </div>
+                            
+                            <div class="pix-detail">
+                                <span class="detail-label">Banco:</span>
+                                <span class="detail-value">Qualquer Banco (Chave Celular)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pix-qrcode">
+                            <img src="images/qrcode_pix_corrigido.png" alt="QR Code PIX">
+                            <p>Escaneie o QR Code para contribuir</p>
+                        </div>
+                        
+                        <div class="pix-value-options">
+                            <h4>Sugestões de Valores para Lua de Mel:</h4>
+                            <div class="value-buttons">
+                                <div class="value-btn" data-value="100">R$ 100</div>
+                                <div class="value-btn" data-value="200">R$ 200</div>
+                                <div class="value-btn" data-value="300">R$ 300</div>
+                                <div class="value-btn" data-value="500">R$ 500</div>
+                                <div class="value-btn custom-value">Outro Valor</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="gift-message">
+                <h3>Deixe uma Mensagem com seu Presente</h3>
+                <form class="gift-message-form">
+                    <div class="form-group">
+                        <label for="gift-name">Seu Nome:</label>
+                        <input type="text" id="gift-name" name="gift-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gift-email">Seu Email:</label>
+                        <input type="email" id="gift-email" name="gift-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gift-message">Sua Mensagem:</label>
+                        <textarea id="gift-message" name="gift-message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bianca & Alan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="presentes.js"></script>
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

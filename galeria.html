@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Bianca & Alan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bianca & Alan</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="evento.html">Cerimônia & Festa</a></li>
+                <li><a href="presentes.html">Lista de Presentes</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="rsvp.html">Confirme sua Presença</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section galeria">
+            <h2>Galeria de Fotos</h2>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="pre-wedding">Pré-Wedding</button>
+                <button class="filter-btn" data-filter="pets">Com Nossos Pets</button>
+                <button class="filter-btn" data-filter="noite">Momentos à Noite</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item pre-wedding">
+                    <img src="images/eaac378b-577d-43e5-9295-36b56c90eb73.jpeg" alt="Bianca e Alan sentados juntos">
+                    <div class="gallery-caption">
+                        <h3>Nosso Ensaio</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item noite">
+                    <img src="images/d1a958db-74d9-43c4-98da-3965bef5040f.jpeg" alt="Bianca e Alan olhando um para o outro">
+                    <div class="gallery-caption">
+                        <h3>Olhares que Falam</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item pets">
+                    <img src="images/1e73f271-e75a-4066-8767-38688cff88d3.jpeg" alt="Bianca e Alan com seus pets">
+                    <div class="gallery-caption">
+                        <h3>Nossa Família</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item noite">
+                    <img src="images/49df3331-93ab-4647-987c-5df68c3b6b87.jpeg" alt="Bianca e Alan sorrindo juntos">
+                    <div class="gallery-caption">
+                        <h3>Sorrisos Sinceros</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item noite">
+                    <img src="images/c2810ca5-abd0-4173-bc2e-216be57fec0b.jpeg" alt="Bianca e Alan em frente a um prédio iluminado">
+                    <div class="gallery-caption">
+                        <h3>Noite Especial</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bianca & Alan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="galeria.js"></script>
+</body>
+</html>
+

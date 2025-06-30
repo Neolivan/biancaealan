@@ -1,0 +1,183 @@
+/* RSVP Styles */
+
+.rsvp {
+    padding-top: 120px; /* Extra padding to account for fixed header */
+}
+
+.rsvp-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.rsvp-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.rsvp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rsvp-header h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.rsvp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.rsvp-form {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label input {
+    margin-right: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* RSVP Info */
+.rsvp-info {
+    width: 100%;
+    max-width: 400px;
+}
+
+.info-card,
+.countdown-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.info-card h3,
+.countdown-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info-card ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/* Countdown Display */
+.countdown-display {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.countdown-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.count-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.count-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rsvp-card,
+    .rsvp-info {
+        max-width: 100%;
+    }
+    
+    .rsvp-card {
+        padding: 30px 20px;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .count-number {
+        font-size: 2rem;
+    }
+}
+
